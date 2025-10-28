@@ -1,0 +1,21 @@
+[
+  {
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.aboveai.aboveai",
+    "sha256_cert_fingerprints":
+    ["EB:AB:0E:E6:AB:AD:CA:13:A7:49:A9:BB:88:F5:D8:3C:53:C2:CC:3F:5F:7F:97:8D:4D:49:CD:76:4F:5A:7A:E6"]
+  }
+},
+{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.aboveai.dev",
+      "sha256_cert_fingerprints": [
+        "A4:F6:13:18:CB:BE:66:6E:48:E6:16:21:C0:E2:46:08:AF:A6:A1:A2:19:C1:EB:68:80:3B:3C:5C:83:F0:DB:2A"
+      ]
+    }
+  }
+]

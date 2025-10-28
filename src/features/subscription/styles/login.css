@@ -1,0 +1,61 @@
+.login__form-container {
+  padding: 42px 32px;
+  min-width: 842px;
+  background-color: #101010;
+  border: 1px solid #282828;
+}
+
+.login__text-light {
+    display: block; 
+    color: #9e9f9f;
+    margin-bottom: 8px;
+}
+
+.login__form-input-dark {
+  padding: 12px;
+  border: none; 
+  background-color: #2c2c2c; /* Nền input tối */
+  color: #ffffff; /* Màu chữ trong input */
+  font-size: 16px;
+  border-radius: 4px; 
+  width: 100%;
+}
+
+.login__feature-wrapper {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login__feature-a {
+    color: #9e9f9f;
+    text-decoration: underline;
+}
+
+.login__feature-primary {
+    margin-left: 3px;
+    color: #459b73;
+    text-decoration: underline;
+}
+
+.login__feature-primary:hover {
+    color: #52b788;
+}
+
+.login__button {
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+  padding: 15px;
+  background-color: #459b73; /* Màu xanh lá cây đậm */
+  color: #000000; /* Màu chữ đen */
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.login__button:hover:not(:disabled) {
+  background-color: #52b788;
+}

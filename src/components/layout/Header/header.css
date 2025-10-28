@@ -1,0 +1,73 @@
+/* Thiết lập nền cho toàn bộ thanh Navbar */
+.navbar__header {
+  background-color: #000000; /* Nền đen */
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container chính của Navbar (sử dụng Flexbox để căn chỉnh) */
+.navbar__container {
+  display: flex;
+  justify-content: space-between; /* Căn Logo, Links và Button ra hai bên */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  margin: 0 auto;
+  padding: 0 58px;
+  height: 72px; /* Chiều cao cố định của thanh navbar */
+}
+
+/* 1. Logo (ABOVE) */
+.navbar__logo {
+  color: #ffffff;
+  font-size: 30px; /* Kích thước chữ lớn */
+  font-weight: 300; /* Chữ mỏng */
+  letter-spacing: 5px; /* Khoảng cách chữ cái */
+  position: absolute; /* Vị trí tuyệt đối để căn giữa hoàn toàn */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 2. Các liên kết (Links Left) */
+.navbar__links-left {
+  list-style: none; /* Bỏ dấu chấm */
+  display: flex;
+  gap: 30px; /* Khoảng cách giữa các liên kết */
+  padding: 0;
+  margin: 0;
+}
+
+.navbar__link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.navbar__link:hover {
+  opacity: 1;
+}
+
+/* 3. Nút hành động (BUY NOW) */
+.navbar__button-right {
+  border: 1px solid #52b788;
+  background-color: #52b788;
+  border-radius: unset;
+  color: black;
+  text-transform: uppercase;
+  min-height: 2.5em;
+  padding: .8125em 2em;
+  font-size: .75em;
+  transition: all .2s;
+}
+
+.navbar__button-right:hover {
+  color: #52b788;
+  background-color: black;
+}
+
+/* Đảm bảo các liên kết và nút không bị logo che khuất */
+/* Trong cấu trúc này, logo có position: absolute, nên không ảnh hưởng đến flow của links và button. */

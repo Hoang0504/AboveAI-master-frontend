@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "XXZTPD7U9N.com.aboveai.aboveai",
+        "paths": [ "/home" ]
+      },
+       {
+        "appID": "XXZTPD7U9N.com.aboveai.dev",
+        "paths": [ "/home" ]
+      }
+    ]
+  }
+}

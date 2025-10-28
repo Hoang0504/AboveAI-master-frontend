@@ -1,0 +1,148 @@
+.payment__wrapper {
+  max-width: 550px;
+  margin: 3rem auto;
+  background: linear-gradient(180deg, #0e0e0e, #1b1b1b);
+  color: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  font-family: "Inter", sans-serif;
+}
+
+.payment__title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.payment__form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.payment__label {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.payment__input,
+.payment__input[type="text"],
+.payment__input[type="email"],
+.payment__input[type="password"],
+.payment__input[type="number"],
+.payment__input select {
+  width: 100%;
+  background: #222;
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 0.75rem;
+  font-size: 0.9rem;
+  transition: border-color 0.3s ease;
+}
+
+.payment__input:focus {
+  border-color: #2ecc71;
+  outline: none;
+}
+
+.payment__method-box {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.payment__method {
+  flex: 1;
+  background: #222;
+  color: #ccc;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 0.75rem;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.payment__method--active {
+  background: #1f3c31;
+  color: #fff;
+  border-color: #2ecc71;
+}
+
+.payment__method:hover {
+  background: #333;
+}
+
+.payment__secure {
+  font-size: 0.85rem;
+  color: #6dd3a6;
+  background: rgba(50, 100, 80, 0.3);
+  border-radius: 4px;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.payment__row {
+  display: flex;
+  gap: 1rem;
+}
+
+.payment__column {
+  flex: 1;
+}
+
+.payment__note {
+  font-size: 0.8rem;
+  color: #999;
+  line-height: 1.4;
+}
+
+.payment__promo {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.payment__apply-btn {
+  background: #459b73;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0 1.25rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.payment__apply-btn:hover {
+  background: #52b788;
+}
+
+.payment__summary {
+  margin-top: 1.5rem;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+}
+
+.payment__summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.payment__submit {
+  width: 100%;
+  background-color: #459b73;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.payment__submit:hover {
+  background-color: #52b788;
+}

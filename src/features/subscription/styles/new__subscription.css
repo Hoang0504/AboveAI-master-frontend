@@ -1,0 +1,172 @@
+.subscription__plan-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem; /* Added margin to accommodate badge */
+  justify-content: center;
+  padding-top: 15px; /* Added padding for badge space */
+  align-items: stretch; /* Ensure all cards have equal height */
+}
+
+.subscription__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background: #000;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+.subscription__card {
+  position: relative;
+  width: 400px;
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.subscription__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* === MÀU NỀN === */
+.subscription__free {
+  background-image: url("/images/BG-Item1.webp");
+}
+.subscription__elevate {
+  background-image: url("/images/BG-Item2.webp");
+}
+.subscription__unlimited {
+  background-image: url("/images/BG-Item3.webp");
+}
+
+/* === GÓI ĐƯỢC CHỌN === */
+.subscription__selected {
+  outline: 2px solid #ffd966;
+  box-shadow: 0 0 25px rgba(255, 217, 102, 0.6);
+  transform: translateY(-8px);
+  transition: all 0.3s ease;
+}
+
+.subscription__selected:hover {
+  box-shadow: 0 0 35px rgba(255, 217, 102, 0.8);
+}
+
+/* === NỘI DUNG === */
+.subscription__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.subscription__price {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.subscription__currency {
+  font-size: 1rem;
+  vertical-align: super;
+}
+
+.subscription__period {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.subscription__subtitle {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #dcdcdc;
+  margin-bottom: 56px;
+}
+
+.subscription__button {
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 4px;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+/* === NÚT THEO MÀU === */
+.subscription__free .subscription__button {
+  background: #333;
+  color: #fff;
+}
+.subscription__elevate .subscription__button {
+  background: #a75b34;
+  color: #fff;
+}
+.subscription__unlimited .subscription__button {
+  background: #2c6b4f;
+  color: #fff;
+}
+.subscription__button:hover {
+  opacity: 0.85;
+}
+
+.subscription__feature {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+.subscription__check {
+  color: #86efac;
+  margin-right: 4px;
+}
+
+.subscription__note {
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 0.5rem;
+}
+
+.subscription__badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ffcc00;
+  color: #000;
+  font-weight: 700;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 3px;
+}
+
+.subscription__disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.plan__button {
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+  padding: 15px;
+  background-color: #459b73; /* Màu xanh lá cây đậm */
+  color: #000000; /* Màu chữ đen */
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.plan__button:hover {
+  background-color: #52b788;
+}
