@@ -1,9 +1,12 @@
 /* Thiết lập nền cho toàn bộ thanh Navbar */
 .navbar__header {
-  background-color: #000000; /* Nền đen */
-  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   padding: 0;
-  box-sizing: border-box;
+  z-index: 9999;
+  background-color: #000000; /* Nền đen */
 }
 
 /* Container chính của Navbar (sử dụng Flexbox để căn chỉnh) */
@@ -18,13 +21,15 @@
 
 /* 1. Logo (ABOVE) */
 .navbar__logo {
-  color: #ffffff;
-  font-size: 30px; /* Kích thước chữ lớn */
-  font-weight: 300; /* Chữ mỏng */
-  letter-spacing: 5px; /* Khoảng cách chữ cái */
-  position: absolute; /* Vị trí tuyệt đối để căn giữa hoàn toàn */
-  left: 50%;
-  transform: translateX(-50%);
+  padding: 0 8px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar__logo img {
+  width: 100%;
+  max-width: 124px;
 }
 
 /* 2. Các liên kết (Links Left) */
@@ -71,3 +76,15 @@
 
 /* Đảm bảo các liên kết và nút không bị logo che khuất */
 /* Trong cấu trúc này, logo có position: absolute, nên không ảnh hưởng đến flow của links và button. */
+
+@media (max-width: 768px) {
+  .navbar__container {
+    padding: 0 30px;
+  }
+
+  .navbar__button-right {
+    padding-left: 8px;
+    padding-right: 8px;
+    text-wrap: nowrap;
+  }
+}

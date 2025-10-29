@@ -1,6 +1,6 @@
 .login__form-container {
   padding: 42px 32px;
-  min-width: 842px;
+  width: 100%;
   background-color: #101010;
   border: 1px solid #282828;
 }
@@ -24,15 +24,19 @@
 .login__feature-wrapper {
     margin-bottom: 24px;
     display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
     justify-content: space-between;
 }
 
 .login__feature-a {
+  text-wrap: nowrap;
     color: #9e9f9f;
     text-decoration: underline;
 }
 
 .login__feature-primary {
+  text-wrap: nowrap;
     margin-left: 3px;
     color: #459b73;
     text-decoration: underline;

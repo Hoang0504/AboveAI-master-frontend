@@ -17,11 +17,7 @@ function Header() {
 
         {/* Logo/Tên thương hiệu ở giữa */}
         <a href="https://new-goabove.webflow.io/" className="navbar__logo">
-          <img
-            src="https://cdn.prod.website-files.com/68ca3728ec5184bc3933785b/68ca4ab7a143b05867a5997c_logo.svg"
-            loading="lazy"
-            alt="logo"
-          />
+          <img src="/images/logo.svg" loading="lazy" alt="logo" />
         </a>
 
         {/* Nút hành động bên phải */}

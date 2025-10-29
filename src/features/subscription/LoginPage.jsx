@@ -64,7 +64,9 @@ const LoginPage = () => {
   return (
     <div className="login-container">
       {/* <div className="above-logo">ABOVE</div> */}
-      <h2 className="section-title">Login to Manage Your Membership</h2>
+      <h2 className="section-title">
+        Login to Manage <br /> Your Membership
+      </h2>
 
       {error && <div className="error-message">{error}</div>}
 

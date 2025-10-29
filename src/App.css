@@ -6,15 +6,19 @@
 
 html {
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .app-container {
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-color: #0f172a;
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  flex-direction: column;
+  background: linear-gradient(
+    to bottom,
+    #030306 0%, /* Màu đen đậm ở phía trên */
+    #2c3a3a 100% /* Màu xám xanh đậm hơn ở phía dưới */
+    );
 }
 
 .app-header {
@@ -58,19 +62,13 @@ html {
 .app-content {
   flex: 1;
   padding: 2rem;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
-  background-image: url("/images/bg.webp");
+  margin-top: 72px;
 }
 
 .app-footer {
-  background-color: #1e293b;
+  color: #fff;
   padding: 1.5rem;
-  text-align: center;
-  color: #94a3b8;
   font-size: 0.875rem;
-  border-top: 1px solid #334155;
 }
 
 /* Home page styles */
