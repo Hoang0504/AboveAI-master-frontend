@@ -44,10 +44,18 @@ const PlanSelection = ({ plans, onSelectPlan, currentSubscription }) => {
     }
 
     setSelectedPlanId(planId);
+
+    // Auto-continue on small screens
+    if (window.innerWidth < 1328) {
+      handleContinue(planId);
+      return;
+    }
   };
 
-  const handleContinue = () => {
-    const selectedPlan = plans.find((plan) => plan.id === selectedPlanId);
+  const handleContinue = (planId) => {
+    const selectedPlan = plans.find((plan) =>
+      planId ? plan.id === planId : plan.id === selectedPlanId
+    );
     if (selectedPlan) {
       onSelectPlan(selectedPlan);
     }
