@@ -118,6 +118,12 @@ html {
 }
 
 /* Responsive styles */
+@media (max-width: 393px) {
+  .home-container h1 {
+    font-size: 24px;
+  }
+}
+
 @media (max-width: 768px) {
   .app-header {
     flex-direction: column;
