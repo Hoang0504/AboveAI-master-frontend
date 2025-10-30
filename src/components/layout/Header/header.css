@@ -45,7 +45,7 @@
   display: block;
   color: #ffffff;
   text-decoration: none;
-  font-size: 8px;
+  font-size: 12px;
   font-weight: 600;
   line-height: 36px;
   text-transform: uppercase;
@@ -66,7 +66,7 @@
   text-transform: uppercase;
   min-height: 2.5em;
   padding: .8125em 2em;
-  font-size: 8px;
+  font-size: 12px;
   transition: all .2s;
 }
 
@@ -77,6 +77,13 @@
 
 /* Đảm bảo các liên kết và nút không bị logo che khuất */
 /* Trong cấu trúc này, logo có position: absolute, nên không ảnh hưởng đến flow của links và button. */
+
+@media (max-width: 393px) {
+  .navbar__link,
+  .navbar__button-right {
+    font-size: 8px;
+  }
+}
 
 @media (max-width: 768px) {
   .navbar__container {

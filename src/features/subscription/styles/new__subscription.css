@@ -176,9 +176,13 @@
   background-color: #52b788;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 393px) {
   /* .subscription__card {
     padding-left: 0;
     padding-right: 0;
   } */
+
+  .subscription__button {
+    font-size: 12px;
+  }
 }

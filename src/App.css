@@ -77,6 +77,9 @@ html {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .home-container h1 {
