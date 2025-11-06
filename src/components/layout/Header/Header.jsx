@@ -19,11 +19,11 @@ function Header() {
         <a href="https://new-goabove.webflow.io/" className="navbar__logo">
           <img src="/images/logo.svg" loading="lazy" alt="logo" />
         </a>
-
+        <div></div>
         {/* Nút hành động bên phải */}
-        <Link to="/payment" className="navbar__button-right">
+        {/* <Link to="/payment" className="navbar__button-right">
           BUY NOW
-        </Link>
+        </Link> */}
       </nav>
     </header>
   );
