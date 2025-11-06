@@ -19,6 +19,10 @@
   height: 72px; /* Chiều cao cố định của thanh navbar */
 }
 
+.navbar__balance {
+  flex-grow: 1; flex-shrink: 1; flex-basis: 0%
+}
+
 /* 1. Logo (ABOVE) */
 .navbar__logo {
   padding: 0 8px;
